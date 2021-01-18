@@ -1,0 +1,13 @@
+@import "src/style";
+
+.menuItem{
+  margin-right: 3%;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  transition: 0.3s;
+
+  :hover{
+    border-bottom: 2px solid $primary-color;
+  }
+}

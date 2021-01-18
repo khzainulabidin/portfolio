@@ -1,0 +1,12 @@
+@import "../../style";
+
+.logo{
+  font-family: 'Pacifico', cursive;
+  margin-bottom: 15px;
+  font-weight: 400;
+  background: $gradient;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  color: transparent;
+  cursor: pointer;
+}

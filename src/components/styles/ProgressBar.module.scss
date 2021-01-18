@@ -1,0 +1,32 @@
+@import "src/style";
+
+.progressBar{
+  width: 70%;
+  margin-top: 3%;
+
+  .title{
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.7);
+
+  }
+
+  .bar{
+    width: 100%;
+    background: rgba(210, 210, 210);
+    height: 5px;
+    border-radius: 2px;
+  }
+
+  .progress{
+    background: $gradient;
+    background-size: 150% 150%;
+    height: 5px;
+    transition: 0.3s;
+    transform: scale(1);
+  }
+
+  .progress:hover{
+    background-position: 100% 100%;
+    transform: scale(1.1);
+  }
+}

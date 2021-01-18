@@ -1,0 +1,42 @@
+@import "src/components/styles/Landing.module";
+
+.about{
+  @extend .landing;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  .info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  img{
+    width: 30%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.5s;
+    transform: scale(1);
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 5% 0;
+  }
+
+  img:hover{
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  }
+
+  h4{
+    font-size: 1rem;
+  }
+
+  button{
+    width: fit-content;
+    padding: 0 20px;
+  }
+
+  a{
+    margin-top: 5%;
+  }
+}

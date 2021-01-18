@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  transition: 0.3s;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button{
+  width: 130px;
+  height: 45px;
+  outline: 0 none;
+  border: 0 none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.5s;
+  box-shadow: none;
+}
+
+button:hover{
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}

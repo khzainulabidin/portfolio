@@ -1,0 +1,25 @@
+@import "src/style";
+
+.navbar{
+  background: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  padding: 0 $horizontal-padding;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+
+  .menu{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+
+    :last-child{
+      margin-right: 0;
+    }
+  }
+}

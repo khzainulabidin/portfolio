@@ -1,0 +1,38 @@
+$primary-color: #512A93;
+$secondary-color:#AE2F7C;
+$gradient: linear-gradient(to right, #32289B, #512A93, #702C8C, #8F2E84, #AE2F7C, #CD3175, #EC336D);
+$gradient-reverse: linear-gradient(to left, #32289B, #512A93, #702C8C, #8F2E84, #AE2F7C, #CD3175, #EC336D);
+$horizontal-padding: 10%;
+
+:global{
+  .primary-button{
+    background: $gradient;
+    color: rgba(255, 255, 255, 0.8);
+    background-size: 150% 150%;
+    transition: 0.5s;
+  }
+
+  .primary-button:hover{
+    background-position: 100% 100%;
+  }
+
+  .secondary-button{
+    background: $gradient;
+    -webkit-background-clip: text;
+    color: transparent;
+    border-top: 1px solid $primary-color;
+    border-left: 1px solid $primary-color;
+    border-bottom: 1px solid $secondary-color;
+    border-right: 1px solid $secondary-color;
+    transition: 0.5s;
+  }
+
+  .secondary-button:hover{
+    @extend .primary-button;
+    border: 0 none;
+  }
+
+  .active{
+    border-bottom: 2px solid $primary-color;
+  }
+}

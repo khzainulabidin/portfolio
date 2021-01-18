@@ -1,0 +1,48 @@
+@import "src/style";
+
+.service{
+  border-radius: 10px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  padding-bottom: 5%;
+  margin: 0 4% 0 4%;
+  transform: scale(1);
+  transition: 0.5s;
+
+  .iconContainer{
+    background: $gradient;
+    background-size: 150% 150%;
+    border-radius: 10px 10px 0 0;
+    padding: 5%;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+  }
+
+  .iconContainer:hover{
+    background-position: 100% 100%;
+  }
+
+  .serviceIcon{
+    color: #FFFFFF;
+    font-size: 2rem;
+  }
+
+  .serviceText{
+    padding: 5%;
+
+    .cardHeading{
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin: 3% 0;
+    }
+
+    .cardText{
+      font-size: 0.9rem;
+      color: rgba(0, 0, 0, 0.9);
+    }
+  }
+}
+
+.service:hover{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transform: scale(1.05);
+}
