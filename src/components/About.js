@@ -35,7 +35,7 @@ const About = () => {
                                 in your project as you need me to be; from the seed of the idea, to the deployment of your application
                             </h4>
                             <a href={resume}>
-                                <button className={'primary-button'}>View Resumé</button>
+                                <button className={'primary-button'}>My Resumé</button>
                             </a>
                         </div>
                     </LightSpeed>
