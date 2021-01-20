@@ -43,13 +43,15 @@ const Contact = () => {
                         </LightSpeed>
                     ) : null}
 
-                    <form onSubmit={sendEmail} id={'contact-form'}>
-                        <input type={'text'} placeholder={'Your Name'} name={'name'} required/>
-                        <input type={'email'} placeholder={'Your Email'} name={'email'} required/>
-                        <input type={'text'} placeholder={'Subject'} name={'subject'} required/>
-                        <textarea placeholder={'Message'} name={'message'} required/>
-                        <button type={'submit'} className={'primary-button'}>Send</button>
-                    </form>
+                    {status !== 'OK' ? (
+                        <form onSubmit={sendEmail} id={'contact-form'}>
+                            <input type={'text'} placeholder={'Your Name'} name={'name'} required/>
+                            <input type={'email'} placeholder={'Your Email'} name={'email'} required/>
+                            <input type={'text'} placeholder={'Subject'} name={'subject'} required/>
+                            <textarea placeholder={'Message'} name={'message'} required/>
+                            <button type={'submit'} className={'primary-button'}>Send</button>
+                        </form>
+                    ) : null}
                 </div>
             </LightSpeed>
 

@@ -1,0 +1,42 @@
+@import "src/style";
+@import "src/components/styles/Landing.module";
+
+.portfolio{
+  @extend .landing;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3%;
+  padding-bottom: 3%;
+
+  .tagsFilter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 3% 0;
+  }
+
+  .container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .loadMoreBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000000;
+    color: #000000;
+    background: transparent;
+    width: fit-content;
+    height: fit-content;
+    padding: 1%;
+  }
+
+  .loadMoreBtn:hover{
+    background: #000000;
+    color: #FFFFFF;
+  }
+}

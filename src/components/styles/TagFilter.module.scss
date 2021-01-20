@@ -1,0 +1,15 @@
+.filter{
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.8);
+  margin: 1%;
+  padding: 0.5% 1%;
+  font-size: 0.7rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.filter:hover{
+  background: rgba(0, 0, 0, 0.8);
+  color: #FFFFFF;
+}

@@ -60,7 +60,11 @@
       span{
         margin-right: 3%;
         cursor: pointer;
-        transition: 0.1s;
+        transform: scale(1);
+      }
+
+      span:hover{
+        transform: scale(1.05);
       }
     }
 
