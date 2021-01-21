@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.2ddfc8e1.chunk.css",
+    "main.js": "/portfolio/static/js/main.7af81532.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.7af81532.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.c3cfb48a.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.c3cfb48a.js.map",
+    "static/js/2.81467965.chunk.js": "/portfolio/static/js/2.81467965.chunk.js",
+    "static/js/2.81467965.chunk.js.map": "/portfolio/static/js/2.81467965.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "static/css/main.2ddfc8e1.chunk.css.map": "/portfolio/static/css/main.2ddfc8e1.chunk.css.map",
+    "static/js/2.81467965.chunk.js.LICENSE.txt": "/portfolio/static/js/2.81467965.chunk.js.LICENSE.txt",
+    "static/media/A-Deo-Nobis-4.7a316005.jpg": "/portfolio/static/media/A-Deo-Nobis-4.7a316005.jpg",
+    "static/media/AB-Property-2.034e3301.jpg": "/portfolio/static/media/AB-Property-2.034e3301.jpg",
+    "static/media/Asphalt-Society-1.8ca4e3ba.jpg": "/portfolio/static/media/Asphalt-Society-1.8ca4e3ba.jpg",
+    "static/media/BCC-Hotel.3c8e1113.jpg": "/portfolio/static/media/BCC-Hotel.3c8e1113.jpg",
+    "static/media/BakeAway-4.dc7f9658.jpg": "/portfolio/static/media/BakeAway-4.dc7f9658.jpg",
+    "static/media/Barones-Carriages-3.f2092e5f.jpg": "/portfolio/static/media/Barones-Carriages-3.f2092e5f.jpg",
+    "static/media/Beyond-2.6c740e7d.jpg": "/portfolio/static/media/Beyond-2.6c740e7d.jpg",
+    "static/media/Equidae-8.65f96f68.jpg": "/portfolio/static/media/Equidae-8.65f96f68.jpg",
+    "static/media/Expat-Infinity-3.b8a10af2.jpg": "/portfolio/static/media/Expat-Infinity-3.b8a10af2.jpg",
+    "static/media/Gadchitz-3.c6dc036f.jpg": "/portfolio/static/media/Gadchitz-3.c6dc036f.jpg",
+    "static/media/Giovez-4.d1e51ff0.jpg": "/portfolio/static/media/Giovez-4.d1e51ff0.jpg",
+    "static/media/Jewellery-Marvels.59272eac.jpg": "/portfolio/static/media/Jewellery-Marvels.59272eac.jpg",
+    "static/media/Leclat-2.a3133e3f.jpg": "/portfolio/static/media/Leclat-2.a3133e3f.jpg",
+    "static/media/Lyfted-Legion.8d17edff.jpg": "/portfolio/static/media/Lyfted-Legion.8d17edff.jpg",
+    "static/media/Mane-2.705dc79d.jpg": "/portfolio/static/media/Mane-2.705dc79d.jpg",
+    "static/media/Medberry.84d69073.jpg": "/portfolio/static/media/Medberry.84d69073.jpg",
+    "static/media/Nick-Chorneau-A-3.673acdca.jpg": "/portfolio/static/media/Nick-Chorneau-A-3.673acdca.jpg",
+    "static/media/ProudMasculine-7.bc33fc65.jpg": "/portfolio/static/media/ProudMasculine-7.bc33fc65.jpg",
+    "static/media/Sebastian-Azul-5.4398ad68.jpg": "/portfolio/static/media/Sebastian-Azul-5.4398ad68.jpg",
+    "static/media/ZainUlAbidin_Resume.d3abb402.pdf": "/portfolio/static/media/ZainUlAbidin_Resume.d3abb402.pdf",
+    "static/media/landingIcon.062bdf41.png": "/portfolio/static/media/landingIcon.062bdf41.png",
+    "static/media/zain_ul_abidin.b226fe6a.png": "/portfolio/static/media/zain_ul_abidin.b226fe6a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c3cfb48a.js",
+    "static/js/2.81467965.chunk.js",
+    "static/css/main.2ddfc8e1.chunk.css",
+    "static/js/main.7af81532.chunk.js"
+  ]
+}
