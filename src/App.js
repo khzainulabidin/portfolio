@@ -6,11 +6,14 @@ import Services from "./components/Services";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import ScrollTopButton from "./components/ScrollTopButton";
+import ReactGA from 'react-ga';
+ReactGA.initialize('G-M7HW7TL2C2');
 
 const App = () => {
     const [pagePosition, setPagePosition] = useState(0);
 
     useEffect(() => {
+        ReactGA.pageview(window.location.pathname + window.location.search);
         window.onscroll = () => {
             setPagePosition(window.pageYOffset);
         }
