@@ -9,8 +9,14 @@ import ScrollTopButton from "./components/ScrollTopButton";
 
 const App = () => {
     const [pagePosition, setPagePosition] = useState(0);
+    const [width, setWidth] = useState(window.innerWidth);
+
+    const updateWindowWidth = () => {
+        setWidth(window.innerWidth);
+    }
 
     useEffect(() => {
+        window.addEventListener('resize', updateWindowWidth);
         window.onscroll = () => {
             setPagePosition(window.pageYOffset);
         }
@@ -18,7 +24,7 @@ const App = () => {
 
     return (
       <React.Fragment>
-          <NavBar pagePosition={pagePosition}/>
+          <NavBar pagePosition={pagePosition} width={width}/>
           <Landing/>
           <About/>
           <Services/>

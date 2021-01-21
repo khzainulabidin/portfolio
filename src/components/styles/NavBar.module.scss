@@ -22,5 +22,64 @@
     :last-child{
       margin-right: 0;
     }
+
+    .menuItem{
+      margin-right: 3%;
+      font-weight: 500;
+      color: rgba(0, 0, 0, 0.8);
+      cursor: pointer;
+      transition: 0.3s;
+
+      :hover{
+        border-bottom: 1px solid $primary-color;
+      }
+    }
+
+    .mobMenuIcon{
+      font-size: 1.3rem;
+      cursor: pointer;
+    }
+  }
+}
+
+.wrapper{
+  width: 0;
+  height: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+
+  .mobMenu{
+    background: rgba(255, 255, 255, 1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 999999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .closeIcon{
+      font-size: 1.3rem;
+      cursor: pointer;
+      position: fixed;
+      top: 8%;
+      right: 8%;
+    }
+
+    .mobMenuItem{
+      width: 100%;
+      padding: 1% 0;
+      border: 0 none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      text-transform: uppercase;
+    }
   }
 }

@@ -1,20 +1,21 @@
 import React from "react";
-import styles from './styles/MenuItem.module.scss';
 import {Link} from "react-scroll";
 
-const MenuItem = ({to, name}) => {
+const MenuItem = ({to, name, className, closeMenu=null}) => {
     return(
-        <Link
-            to={to}
-            className={styles.menuItem}
-            activeClass={'active'}
-            spy={true}
-            smooth={true}
-            offset={0}
-            duration={700}
-        >
-            <span>{name}</span>
-        </Link>
+        <React.Fragment>
+            <Link
+                to={to}
+                className={className}
+                activeClass={'active'}
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={700}
+            >
+                <span onClick={closeMenu}>{name}</span>
+            </Link>
+        </React.Fragment>
     );
 }
 
