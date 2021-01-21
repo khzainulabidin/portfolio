@@ -1,7 +1,7 @@
 import React from "react";
 import {LightSpeed, Fade} from 'react-reveal';
 import styles from './styles/About.module.scss';
-import my_photo from "../assets/images/zain_ul_abidin.jpg";
+import my_photo from "../assets/images/zain_ul_abidin.png";
 import resume from '../assets/documents/ZainUlAbidin_Resume.pdf';
 import {Element} from 'react-scroll';
 import ProgressBar from "./ProgressBar";
