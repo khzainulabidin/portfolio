@@ -41,6 +41,10 @@
     width: fit-content;
     height: fit-content;
     padding: 1%;
+
+    @media all and (max-width: 990px) {
+      padding: 2%;
+    }
   }
 
   .loadMoreBtn:hover{
