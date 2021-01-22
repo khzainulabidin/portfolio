@@ -18,10 +18,10 @@ const NavBar = ({pagePosition, width}) => {
 
     return(
         <Fade>
-            <nav className={styles.navbar} style={{height: pagePosition<20 && width>768 ? '100px' : '50px'}}>
+            <nav className={styles.navbar} style={{height: pagePosition<20 && width>990 ? '100px' : '50px'}}>
                 <Logo size={50}/>
                 <div className={styles.menu}>
-                    {width>768 ? (
+                    {width>990 ? (
                         <React.Fragment>
                             <MenuItem to={'about'} name={'About'} className={styles.menuItem}/>
                             <MenuItem to={'services'} name={'Services'} className={styles.menuItem}/>
