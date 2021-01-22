@@ -6,6 +6,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 
+  @media all and (max-width: 990px) {
+    grid-template-columns: 1fr;
+  }
+
   .contactForm{
     .notification{
       width: 100%;
@@ -14,6 +18,10 @@
       justify-content: flex-start;
       align-items: center;
       padding: 3% 5%;
+
+      @media all and (max-width: 990px) {
+        padding: 3%;
+      }
     }
 
     form{
@@ -50,6 +58,10 @@
     align-items: center;
     color: rgba(0, 0, 0, 0.7);
     font-size: 2rem;
+
+    @media all and (max-width: 990px) {
+      font-size: 1.5rem;
+    }
 
     .icons{
       display: flex;
@@ -91,6 +103,10 @@
     .address{
       font-size: 1.2rem;
       margin-top: 5%;
+
+      @media all and (max-width: 990px) {
+        font-size: 1rem;
+      }
     }
   }
 }

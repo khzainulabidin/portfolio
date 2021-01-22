@@ -8,6 +8,10 @@
   transform: scale(1);
   transition: 0.5s;
 
+  @media all and (max-width: 990px) {
+    margin: 3% 4%;
+  }
+
   .iconContainer{
     background: $gradient;
     background-size: 150% 150%;

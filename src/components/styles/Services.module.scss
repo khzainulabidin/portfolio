@@ -5,6 +5,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  padding-bottom: 5%;
+  padding-top: 5%;
+
+  @media all and (max-width: 990px) {
+    align-items: center;
+    padding-bottom: 10%;
+    padding-top: 10%;
+
+    p{
+      text-align: center;
+    }
+  }
 
   .container{
     display: grid;
@@ -12,12 +24,8 @@
     width: 100%;
     margin-top: 5%;
 
-    :first-child{
-      margin-left: 0;
-    }
-
-    :last-child{
-      margin-right: 0;
+    @media all and (max-width: 990px) {
+      grid-template-columns: 1fr;
     }
   }
 }

@@ -24,6 +24,11 @@ button{
   font-weight: bold;
   transition: 0.5s;
   box-shadow: none;
+
+  @media all and (max-width: 990px) {
+    width: 100px;
+    height: 40px;
+  }
 }
 
 button:hover{
