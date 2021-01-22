@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.2ddfc8e1.chunk.css",
-    "main.js": "/portfolio/static/js/main.c529b4cd.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.c529b4cd.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.34ed30e7.chunk.css",
+    "main.js": "/portfolio/static/js/main.2d5ab111.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.2d5ab111.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.c3cfb48a.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.c3cfb48a.js.map",
-    "static/js/2.3475dc2b.chunk.js": "/portfolio/static/js/2.3475dc2b.chunk.js",
-    "static/js/2.3475dc2b.chunk.js.map": "/portfolio/static/js/2.3475dc2b.chunk.js.map",
+    "static/js/2.3ab46bde.chunk.js": "/portfolio/static/js/2.3ab46bde.chunk.js",
+    "static/js/2.3ab46bde.chunk.js.map": "/portfolio/static/js/2.3ab46bde.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "static/css/main.2ddfc8e1.chunk.css.map": "/portfolio/static/css/main.2ddfc8e1.chunk.css.map",
-    "static/js/2.3475dc2b.chunk.js.LICENSE.txt": "/portfolio/static/js/2.3475dc2b.chunk.js.LICENSE.txt",
+    "static/css/main.34ed30e7.chunk.css.map": "/portfolio/static/css/main.34ed30e7.chunk.css.map",
+    "static/js/2.3ab46bde.chunk.js.LICENSE.txt": "/portfolio/static/js/2.3ab46bde.chunk.js.LICENSE.txt",
     "static/media/A-Deo-Nobis-4.7a316005.jpg": "/portfolio/static/media/A-Deo-Nobis-4.7a316005.jpg",
     "static/media/AB-Property-2.034e3301.jpg": "/portfolio/static/media/AB-Property-2.034e3301.jpg",
     "static/media/Asphalt-Society-1.8ca4e3ba.jpg": "/portfolio/static/media/Asphalt-Society-1.8ca4e3ba.jpg",
@@ -35,8 +35,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.c3cfb48a.js",
-    "static/js/2.3475dc2b.chunk.js",
-    "static/css/main.2ddfc8e1.chunk.css",
-    "static/js/main.c529b4cd.chunk.js"
+    "static/js/2.3ab46bde.chunk.js",
+    "static/css/main.34ed30e7.chunk.css",
+    "static/js/main.2d5ab111.chunk.js"
   ]
 }
