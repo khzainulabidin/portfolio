@@ -1,9 +1,11 @@
 import React, {useState} from "react";
 import styles from './styles/PortfolioItem.module.scss';
 import {Fade, Bounce} from "react-reveal";
+import {IoCloseSharp} from "react-icons/all";
 
-const PortfolioItem = ({image, name, tag}) => {
+const PortfolioItem = ({item: {image, name, tag, description}}) => {
     const [hoverShown, setHoverShown] = useState(false);
+    const [detailsBoxOpen, setDetailsBoxOpen] = useState(false);
 
     return(
         <Bounce>
@@ -12,6 +14,7 @@ const PortfolioItem = ({image, name, tag}) => {
                 onMouseEnter={() => setHoverShown(true)}
                 onMouseLeave={() => setHoverShown(false)}
                 style={{backgroundImage: `url(${image})`}}
+                onClick={() => setDetailsBoxOpen(true)}
             >
                 {hoverShown ? (
                     <Fade>
@@ -19,6 +22,22 @@ const PortfolioItem = ({image, name, tag}) => {
                             <p>{name}</p>
                             <div className={styles.tags}>
                                 <span>{tag}</span>
+                            </div>
+                        </div>
+                    </Fade>
+                ) : null}
+            </div>
+
+            <div className={styles.wrapper}>
+                {detailsBoxOpen ? (
+                    <Fade>
+                        <div className={styles.detailsBox} style={{backgroundImage: `url(${image})`}}>
+                            <Bounce>
+                                <span className={styles.closeIcon} onClick={() => setDetailsBoxOpen(false)}><IoCloseSharp/></span>
+                            </Bounce>
+                            <div className={styles.details}>
+                                <h2>{name}</h2>
+                                <p>{description}</p>
                             </div>
                         </div>
                     </Fade>

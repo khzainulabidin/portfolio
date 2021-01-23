@@ -33,7 +33,7 @@ const Contact = () => {
         <Element name={'contact'} className={styles.contact}>
             <LightSpeed left>
                 <div className={styles.contactForm}>
-                    <p>Get in touch</p>
+                    <p>Let's get in touch</p>
 
                     {status !== '' ? (
                         <LightSpeed left>
