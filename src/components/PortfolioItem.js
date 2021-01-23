@@ -3,7 +3,7 @@ import styles from './styles/PortfolioItem.module.scss';
 import {Fade, Bounce} from "react-reveal";
 import {IoCloseSharp} from "react-icons/all";
 
-const PortfolioItem = ({item: {image, name, tag, description}}) => {
+const PortfolioItem = ({item: {image, name, tag, description, link}}) => {
     const [hoverShown, setHoverShown] = useState(false);
     const [detailsBoxOpen, setDetailsBoxOpen] = useState(false);
 
@@ -31,12 +31,13 @@ const PortfolioItem = ({item: {image, name, tag, description}}) => {
             <div className={styles.wrapper}>
                 {detailsBoxOpen ? (
                     <Fade>
-                        <div className={styles.detailsBox} style={{backgroundImage: `url(${image})`}}>
+                        <div className={styles.detailsBox}>
                             <Bounce>
                                 <span className={styles.closeIcon} onClick={() => setDetailsBoxOpen(false)}><IoCloseSharp/></span>
                             </Bounce>
+                            <img src={image} alt={'Portfolio Item'} onContextMenu={e => e.preventDefault()}/>
                             <div className={styles.details}>
-                                <h2>{name}</h2>
+                                <h2>{name} {link ? <span onClick={() => window.open(link, '_blank')}>Visit</span> : null}</h2>
                                 <p>{description}</p>
                             </div>
                         </div>
