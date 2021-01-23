@@ -36,6 +36,11 @@
     border: 2px solid rgba(255, 255, 255, 0.7);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     margin: 5% 0;
+    display: block !important;
+
+    @media all and (max-width: 990px) {
+      width: 50%;
+    }
   }
 
   img:hover{
