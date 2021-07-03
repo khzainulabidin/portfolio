@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.bb2c32c0.chunk.css",
-    "main.js": "/portfolio/static/js/main.951e6a7d.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.951e6a7d.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.986e932d.chunk.css",
+    "main.js": "/portfolio/static/js/main.fee0a44a.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.fee0a44a.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.c3cfb48a.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.c3cfb48a.js.map",
-    "static/js/2.14f2cb35.chunk.js": "/portfolio/static/js/2.14f2cb35.chunk.js",
-    "static/js/2.14f2cb35.chunk.js.map": "/portfolio/static/js/2.14f2cb35.chunk.js.map",
+    "static/js/2.4c5ab1c8.chunk.js": "/portfolio/static/js/2.4c5ab1c8.chunk.js",
+    "static/js/2.4c5ab1c8.chunk.js.map": "/portfolio/static/js/2.4c5ab1c8.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "static/css/main.bb2c32c0.chunk.css.map": "/portfolio/static/css/main.bb2c32c0.chunk.css.map",
-    "static/js/2.14f2cb35.chunk.js.LICENSE.txt": "/portfolio/static/js/2.14f2cb35.chunk.js.LICENSE.txt",
+    "static/css/main.986e932d.chunk.css.map": "/portfolio/static/css/main.986e932d.chunk.css.map",
+    "static/js/2.4c5ab1c8.chunk.js.LICENSE.txt": "/portfolio/static/js/2.4c5ab1c8.chunk.js.LICENSE.txt",
     "static/media/1a.25de1996.png": "/portfolio/static/media/1a.25de1996.png",
     "static/media/3a.e4905943.png": "/portfolio/static/media/3a.e4905943.png",
     "static/media/4a.193c0dbe.png": "/portfolio/static/media/4a.193c0dbe.png",
@@ -35,14 +35,14 @@
     "static/media/Nick-Chorneau-A-3.673acdca.jpg": "/portfolio/static/media/Nick-Chorneau-A-3.673acdca.jpg",
     "static/media/ProudMasculine-7.bc33fc65.jpg": "/portfolio/static/media/ProudMasculine-7.bc33fc65.jpg",
     "static/media/Sebastian-Azul-5.4398ad68.jpg": "/portfolio/static/media/Sebastian-Azul-5.4398ad68.jpg",
-    "static/media/ZainUlAbidin_Resume.d3abb402.pdf": "/portfolio/static/media/ZainUlAbidin_Resume.d3abb402.pdf",
+    "static/media/ZainUlAbidin_Resume.f1a60914.pdf": "/portfolio/static/media/ZainUlAbidin_Resume.f1a60914.pdf",
     "static/media/landingIcon.062bdf41.png": "/portfolio/static/media/landingIcon.062bdf41.png",
-    "static/media/zain_ul_abidin.b226fe6a.png": "/portfolio/static/media/zain_ul_abidin.b226fe6a.png"
+    "static/media/zain_ul_abidin.ee802f92.jpg": "/portfolio/static/media/zain_ul_abidin.ee802f92.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.c3cfb48a.js",
-    "static/js/2.14f2cb35.chunk.js",
-    "static/css/main.bb2c32c0.chunk.css",
-    "static/js/main.951e6a7d.chunk.js"
+    "static/js/2.4c5ab1c8.chunk.js",
+    "static/css/main.986e932d.chunk.css",
+    "static/js/main.fee0a44a.chunk.js"
   ]
 }
