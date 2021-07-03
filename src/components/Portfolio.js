@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react";
 import styles from './styles/Portfolio.module.scss';
 import {Element} from 'react-scroll';
 import PortfolioItem from "./PortfolioItem";
-import {LightSpeed} from 'react-reveal';
+import {Fade} from 'react-reveal';
 import Filters from "./Filters";
 import myWork from "../assets/data/myWork";
 
@@ -22,12 +22,12 @@ const Portfolio = () => {
 
     return(
         <Element name={'portfolio'} className={styles.portfolio}>
-            <LightSpeed left>
+            <Fade>
                 <h1>My work</h1>
                 <div className={styles.tagsFilter}>
                     <Filters items={items} setUpdatedItems={setUpdatedItems}/>
                 </div>
-            </LightSpeed>
+            </Fade>
 
             <div className={styles.container}>
                 {updatedItems.slice(0, itemsLimit).map((item, index) => (

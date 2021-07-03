@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import styles from './styles/NavBar.module.scss';
 import Logo from "./Logo";
 import MenuItem from "./MenuItem";
-import {Fade, Bounce} from 'react-reveal';
+import {Fade} from 'react-reveal';
 import {BiMenuAltRight, IoCloseSharp} from 'react-icons/all';
 
 const NavBar = ({pagePosition, width}) => {
@@ -29,9 +29,9 @@ const NavBar = ({pagePosition, width}) => {
                             <MenuItem to={'contact'} name={'Contact'} className={styles.menuItem}/>
                         </React.Fragment>
                     ) : (
-                        <Bounce>
+                        <Fade>
                             <span className={styles.mobMenuIcon} onClick={openMobMenu}><BiMenuAltRight/></span>
-                        </Bounce>
+                        </Fade>
                     )}
                 </div>
             </nav>
@@ -39,9 +39,9 @@ const NavBar = ({pagePosition, width}) => {
             <div className={styles.wrapper}>
                 {mobMenuVisible ? (
                     <div className={styles.mobMenu}>
-                        <Bounce>
+                        <Fade>
                             <span className={styles.closeIcon} onClick={closeMobMenu}><IoCloseSharp/></span>
-                        </Bounce>
+                        </Fade>
                         <MenuItem to={'about'} name={'About'} className={styles.mobMenuItem} closeMenu={closeMobMenu}/>
                         <MenuItem to={'services'} name={'Services'} className={styles.mobMenuItem} closeMenu={closeMobMenu}/>
                         <MenuItem to={'portfolio'} name={'Portfolio'} className={styles.mobMenuItem} closeMenu={closeMobMenu}/>

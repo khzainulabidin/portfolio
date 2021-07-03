@@ -10,7 +10,7 @@ import {
     GoMarkGithub,
 } from 'react-icons/all';
 import SocialIcon from "./SocialIcon";
-import {LightSpeed} from 'react-reveal';
+import {Fade} from 'react-reveal';
 
 const Contact = () => {
     const [status, setStatus] = useState('');
@@ -31,31 +31,35 @@ const Contact = () => {
 
     return(
         <Element name={'contact'} className={styles.contact}>
-            <LightSpeed left>
+            <Fade>
                 <div className={styles.contactForm}>
-                    <p>Let's get in touch</p>
+                    <Fade>
+                        <p>Let's get in touch</p>
+                    </Fade>
 
                     {status !== '' ? (
-                        <LightSpeed left>
+                        <Fade>
                             <div className={styles.notification} style={{background: status === 'OK' ? '#1BB596' : '#CF3B3E'}}>
                                 <span>{status === 'OK' ? 'Your message has been sent successfully!' : 'Your message was not delivered. Please try again!'}</span>
                             </div>
-                        </LightSpeed>
+                        </Fade>
                     ) : null}
 
                     {status !== 'OK' ? (
-                        <form onSubmit={sendEmail} id={'contact-form'}>
-                            <input type={'text'} placeholder={'Your Name'} name={'name'} required/>
-                            <input type={'email'} placeholder={'Your Email'} name={'email'} required/>
-                            <input type={'text'} placeholder={'Subject'} name={'subject'} required/>
-                            <textarea placeholder={'Message'} name={'message'} required/>
-                            <button type={'submit'} className={'primary-button'}>Send</button>
-                        </form>
+                        <Fade>
+                            <form onSubmit={sendEmail} id={'contact-form'}>
+                                <input type={'text'} placeholder={'Your Name'} name={'name'} required/>
+                                <input type={'email'} placeholder={'Your Email'} name={'email'} required/>
+                                <input type={'text'} placeholder={'Subject'} name={'subject'} required/>
+                                <textarea placeholder={'Message'} name={'message'} required/>
+                                <button type={'submit'} className={'primary-button'}>Send</button>
+                            </form>
+                        </Fade>
                     ) : null}
                 </div>
-            </LightSpeed>
+            </Fade>
 
-            <LightSpeed right>
+            <Fade>
                 <div className={styles.info}>
                     <div className={styles.icons}>
                         <SocialIcon
@@ -94,7 +98,7 @@ const Contact = () => {
                         <span>Brooklyn, NY, USA</span>
                     </div>
                 </div>
-            </LightSpeed>
+            </Fade>
         </Element>
     );
 }

@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import styles from './styles/PortfolioItem.module.scss';
-import {Fade, Bounce} from "react-reveal";
+import {Fade} from "react-reveal";
 import {IoCloseSharp} from "react-icons/all";
 
 const PortfolioItem = ({item: {image, name, tag, description, link}}) => {
@@ -8,7 +8,7 @@ const PortfolioItem = ({item: {image, name, tag, description, link}}) => {
     const [detailsBoxOpen, setDetailsBoxOpen] = useState(false);
 
     return(
-        <Bounce>
+        <Fade>
             <div
                 className={styles.portfolioItem}
                 onMouseEnter={() => setHoverShown(true)}
@@ -32,19 +32,21 @@ const PortfolioItem = ({item: {image, name, tag, description, link}}) => {
                 {detailsBoxOpen ? (
                     <Fade>
                         <div className={styles.detailsBox}>
-                            <Bounce>
+                            <Fade>
                                 <span className={styles.closeIcon} onClick={() => setDetailsBoxOpen(false)}><IoCloseSharp/></span>
-                            </Bounce>
-                            <img src={image} alt={'Portfolio Item'} onContextMenu={e => e.preventDefault()}/>
-                            <div className={styles.details}>
-                                <h2>{name} {link ? <span onClick={() => window.open(link, '_blank')}>Visit</span> : null}</h2>
-                                <p>{description}</p>
-                            </div>
+                            </Fade>
+                            <Fade>
+                                <img src={image} alt={'Portfolio Item'} onContextMenu={e => e.preventDefault()}/>
+                                <div className={styles.details}>
+                                    <h2>{name} {link ? <span onClick={() => window.open(link, '_blank')}>Visit</span> : null}</h2>
+                                    <p>{description}</p>
+                                </div>
+                            </Fade>
                         </div>
                     </Fade>
                 ) : null}
             </div>
-        </Bounce>
+        </Fade>
     );
 }
 
