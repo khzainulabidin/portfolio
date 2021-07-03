@@ -24,7 +24,6 @@ const NavBar = ({pagePosition, width}) => {
                     {width>990 ? (
                         <React.Fragment>
                             <MenuItem to={'about'} name={'About'} className={styles.menuItem}/>
-                            <MenuItem to={'services'} name={'Services'} className={styles.menuItem}/>
                             <MenuItem to={'portfolio'} name={'Portfolio'} className={styles.menuItem}/>
                             <MenuItem to={'contact'} name={'Contact'} className={styles.menuItem}/>
                         </React.Fragment>
@@ -43,7 +42,6 @@ const NavBar = ({pagePosition, width}) => {
                             <span className={styles.closeIcon} onClick={closeMobMenu}><IoCloseSharp/></span>
                         </Fade>
                         <MenuItem to={'about'} name={'About'} className={styles.mobMenuItem} closeMenu={closeMobMenu}/>
-                        <MenuItem to={'services'} name={'Services'} className={styles.mobMenuItem} closeMenu={closeMobMenu}/>
                         <MenuItem to={'portfolio'} name={'Portfolio'} className={styles.mobMenuItem} closeMenu={closeMobMenu}/>
                         <MenuItem to={'contact'} name={'Contact'} className={styles.mobMenuItem} closeMenu={closeMobMenu}/>
                     </div>

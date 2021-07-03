@@ -1,6 +1,6 @@
 import React from "react";
 import styles from './styles/Landing.module.scss';
-import landing_icon from '../assets/images/landingIcon.png';
+//import landing_icon from '../assets/images/landingIcon.png';
 import {Element, Link} from 'react-scroll';
 import {Fade} from "react-reveal";
 
@@ -12,7 +12,7 @@ const Landing = () => {
                     <Fade>
                         <div>
                             <h4>Hi, my name is Zain.</h4>
-                            <p>I'm a freelance full stack web developer, graphic designer & a student</p>
+                            <p>I'm a creative full stack web developer, based in New York</p>
                             <div className={styles.buttons}>
                                 <Link to="portfolio" spy={true} smooth={true} offset={50} duration={700}>
                                     <button className={'secondary-button'}>My Work</button>
@@ -24,9 +24,9 @@ const Landing = () => {
                         </div>
                     </Fade>
 
-                    <Fade>
+                    {/*<Fade>
                         <img src={landing_icon} alt={'Programmer'} onContextMenu={e => e.preventDefault()}/>
-                    </Fade>
+                    </Fade>*/}
                 </div>
             </Fade>
         </Element>
