@@ -37,14 +37,17 @@ const NavBar = ({pagePosition, width}) => {
 
             <div className={styles.wrapper}>
                 {mobMenuVisible ? (
-                    <div className={styles.mobMenu}>
-                        <Fade>
-                            <span className={styles.closeIcon} onClick={closeMobMenu}><IoCloseSharp/></span>
-                        </Fade>
-                        <MenuItem to={'about'} name={'About'} className={styles.mobMenuItem} closeMenu={closeMobMenu}/>
-                        <MenuItem to={'portfolio'} name={'Portfolio'} className={styles.mobMenuItem} closeMenu={closeMobMenu}/>
-                        <MenuItem to={'contact'} name={'Contact'} className={styles.mobMenuItem} closeMenu={closeMobMenu}/>
-                    </div>
+                    <Fade>
+                        <div className={styles.mobMenu}>
+                            <Fade>
+                                <span className={styles.closeIcon} onClick={closeMobMenu}><IoCloseSharp/></span>
+                            </Fade>
+
+                            <MenuItem to={'about'} name={'About'} className={styles.mobMenuItem} closeMenu={closeMobMenu}/>
+                            <MenuItem to={'portfolio'} name={'Portfolio'} className={styles.mobMenuItem} closeMenu={closeMobMenu}/>
+                            <MenuItem to={'contact'} name={'Contact'} className={styles.mobMenuItem} closeMenu={closeMobMenu}/>
+                        </div>
+                    </Fade>
                 ) : null}
             </div>
         </Fade>
