@@ -2,8 +2,8 @@ import React from "react";
 import {Fade} from 'react-reveal';
 import styles from './styles/About.module.scss';
 //import my_photo from "../assets/images/zain_ul_abidin.jpg";
-import resume from '../assets/documents/ZainUlAbidin_Resume.pdf';
-import {Element} from 'react-scroll';
+// import resume from '../assets/documents/ZainUlAbidin_Resume.pdf';
+import {Element, Link} from 'react-scroll';
 import ProgressBar from "./ProgressBar";
 import Card from "./Card";
 import {AiOutlineExperiment} from "react-icons/ai";
@@ -42,9 +42,12 @@ const About = () => {
                                     track record of success in collaborative team environments. I am dedicated to bringing innovation 
                                     and excellence to every aspect of web development.
                                 </h4>
-                                <a href={resume}>
+                                {/* <a href={resume}>
                                     <button className={'primary-button'}>My Resumé</button>
-                                </a>
+                                </a> */}
+                                <Link to="portfolio" spy={true} smooth={true} offset={50} duration={700}>
+                                    <button className={'primary-button'}>My Work</button>
+                                </Link>
                             </Fade>
                         </div>
                     </Fade>
