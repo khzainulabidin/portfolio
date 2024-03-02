@@ -2,13 +2,9 @@ import React, {useState} from "react";
 import styles from './styles/Contact.module.scss';
 import {Element} from 'react-scroll';
 import emailjs from 'emailjs-com';
-import {
-    FaFacebook,
-    GrTwitter,
-    FiInstagram,
-    FaLinkedinIn,
-    GoMarkGithub,
-} from 'react-icons/all';
+import {FiInstagram} from 'react-icons/fi';
+import {GrTwitter} from 'react-icons/gr';
+import {FaFacebook,FaLinkedinIn,FaGithub} from 'react-icons/fa';
 import SocialIcon from "./SocialIcon";
 import {Fade} from 'react-reveal';
 
@@ -88,14 +84,14 @@ const Contact = () => {
                         />
                         <SocialIcon
                             className={styles.github}
-                            icon={<GoMarkGithub/>}
+                            icon={<FaGithub/>}
                             title={'Github'}
                             url={'https://github.com/khzainulabidin'}
                         />
                     </div>
 
                     <div className={styles.address}>
-                        <span>Brooklyn, NY, USA</span>
+                        <span>Edison, NJ, USA</span>
                     </div>
                 </div>
             </Fade>

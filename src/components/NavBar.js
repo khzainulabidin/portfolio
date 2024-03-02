@@ -3,7 +3,8 @@ import styles from './styles/NavBar.module.scss';
 import Logo from "./Logo";
 import MenuItem from "./MenuItem";
 import {Fade} from 'react-reveal';
-import {BiMenuAltRight, IoCloseSharp} from 'react-icons/all';
+import {BiMenuAltRight} from 'react-icons/bi';
+import {IoCloseSharp} from 'react-icons/io5';
 
 const NavBar = ({pagePosition, width}) => {
     const [mobMenuVisible, setMobMenuVisible] = useState(false);

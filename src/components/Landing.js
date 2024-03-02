@@ -11,8 +11,8 @@ const Landing = () => {
                 <div className={styles.landing}>
                     <Fade>
                         <div>
-                            <h4>Hi, my name is Zain.</h4>
-                            <p>I'm a creative full stack web developer, based in New York</p>
+                            <h4>Hi, I'm Zain.</h4>
+                            <p>The Coding Virtuoso Redefining Digital Landscapes with Full Stack Brilliance!</p>
                             <div className={styles.buttons}>
                                 <Link to="portfolio" spy={true} smooth={true} offset={50} duration={700}>
                                     <button className={'secondary-button'}>My Work</button>

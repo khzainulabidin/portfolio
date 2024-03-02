@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import styles from './styles/PortfolioItem.module.scss';
 import {Fade} from "react-reveal";
-import {IoCloseSharp} from "react-icons/all";
+import {IoCloseSharp} from "react-icons/io5";
 
 const PortfolioItem = ({item: {image, name, tag, description, link}}) => {
     const [hoverShown, setHoverShown] = useState(false);
