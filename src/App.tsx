@@ -3,7 +3,7 @@ import UnderConstruction from "./pages/UnderConstruction/UnderConstruction";
 import LandingPage from "./pages/LandingPage/LandingPage";
 
 const App = (): React.JSX.Element => {
-    const [underConstruction] = useState(true);
+    const [underConstruction] = useState<boolean>(true);
 
     return underConstruction ? <UnderConstruction /> : <LandingPage />;
 }
