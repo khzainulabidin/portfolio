@@ -83,7 +83,7 @@ const LandingPage: React.FunctionComponent = (): React.JSX.Element => {
                 </div>
 
                 <div id='about' className={styles.container}>
-                    <h1 className={styles.heading}>About</h1>
+                    <h1 className={[styles.heading, styles.sectionHeading].join(' ')}>About</h1>
                     <p className={styles.description}>
                         I graduated in 2021 with <b>Bachelors degree in Computer Science</b>. With <b>3
                             years of full time experience</b> as a full stack developer and more than <b>5 years of
