@@ -16,6 +16,8 @@ import {
     BiLogoAngular,
     BiLogoNodejs,
     BiLogoJava,
+    BiLogoPostgresql,
+    BiLogoMongodb,
     BiLogoAws
 } from "react-icons/bi";
 import { IconType } from 'react-icons';
@@ -38,6 +40,8 @@ const LandingPage: React.FunctionComponent = (): React.JSX.Element => {
         { icon: BiLogoAngular, color: '#bd032d', title: 'Angular' },
         { icon: BiLogoNodejs, color: '#388537', title: 'Node JS & Express JS' },
         { icon: BiLogoJava, color: '#1b84b4', title: 'Java & Spring Boot' },
+        { icon: BiLogoMongodb, color: '#579035', title: 'NoSQL' },
+        { icon: BiLogoPostgresql, color: '#31648c', title: 'SQL' },
         { icon: BiLogoAws, color: '#f79200', title: 'AWS Cloud' },
     ];
 
@@ -55,11 +59,21 @@ const LandingPage: React.FunctionComponent = (): React.JSX.Element => {
         gsap.to('#about', {
             scrollTrigger: {
                 trigger: '#about',
-                start: 'top 50%',
+                start: 'top 60%',
                 end: 'bottom 100%',
                 scrub: 3,
             },
             opacity: 1,
+            duration: 0.5,
+        });
+        gsap.to('#skills', {
+            scrollTrigger: {
+                trigger: '#about',
+                start: 'top 20%',
+                end: 'bottom 100%',
+                scrub: 3,
+            },
+            marginLeft: 0,
             duration: 0.5,
         });
     }, []);
@@ -92,9 +106,9 @@ const LandingPage: React.FunctionComponent = (): React.JSX.Element => {
                         MEAN and Java Spring, and I'm always eager to learn and work with latest and emerging technologies
                     </p>
 
-                    <div className={styles.skillIcons}>
+                    <div id='skills' className={styles.skillIcons}>
                         {icons.map((icon: SkillIcon, index: number): React.JSX.Element => (
-                            <span><icon.icon color={icon.color} key={index} /></span>
+                            <span title={icon.title}><icon.icon color={icon.color} key={index} /></span>
                         ))}
                     </div>
                 </div>
