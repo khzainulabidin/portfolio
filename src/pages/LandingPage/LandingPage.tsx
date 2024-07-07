@@ -7,28 +7,39 @@ import { IoInformationCircleOutline } from "react-icons/io5";
 import { TbListDetails } from "react-icons/tb";
 import { MdOutlineAlternateEmail } from "react-icons/md";
 import { ScrollTrigger } from 'gsap/all';
-import { FaAws, FaJava } from 'react-icons/fa';
-import { IoLogoHtml5, IoLogoCss3, IoLogoJavascript, IoLogoReact, IoLogoAngular, IoLogoNodejs } from "react-icons/io5";
-import { SiTypescript } from "react-icons/si";
+import {
+    BiLogoTypescript,
+    BiLogoJavascript,
+    BiLogoHtml5,
+    BiLogoCss3,
+    BiLogoReact,
+    BiLogoAngular,
+    BiLogoNodejs,
+    BiLogoJava,
+    BiLogoAws
+} from "react-icons/bi";
+import { IconType } from 'react-icons';
 
-const LandingPage = (): React.JSX.Element => {
-    const icons = [
-        { Icon: IoLogoHtml5, color: '#d84925' },
-        { Icon: IoLogoCss3, color: '#006eb5' },
-        { Icon: IoLogoJavascript, color: '#e8d44d' },
-        { Icon: SiTypescript, color: '#2f73c0' },
-        { Icon: IoLogoReact, color: '#05d1f6' },
-        { Icon: IoLogoAngular, color: '#bd032d' },
-        { Icon: IoLogoNodejs, color: '#388537' },
-        { Icon: FaJava, color: '#1b84b4' },
-        { Icon: FaAws, color: '#f79200' },
-        { Icon: FaAws, color: '#f79200' },
-        { Icon: SiTypescript, color: 'red' },
-    ];
+interface SkillIcon {
+    icon: IconType;
+    color: string;
+    title: string;
+}
 
+const LandingPage: React.FunctionComponent = (): React.JSX.Element => {
     gsap.registerPlugin(ScrollTrigger);
-
     const timeline = gsap.timeline();
+    const icons: SkillIcon[] = [
+        { icon: BiLogoHtml5, color: '#d84925', title: 'HTML' },
+        { icon: BiLogoCss3, color: '#006eb5', title: 'CSS' },
+        { icon: BiLogoJavascript, color: '#e8d44d', title: 'JavaScript' },
+        { icon: BiLogoTypescript, color: '#2f73c0', title: 'TypeScript' },
+        { icon: BiLogoReact, color: '#05d1f6', title: 'React JS & React Native' },
+        { icon: BiLogoAngular, color: '#bd032d', title: 'Angular' },
+        { icon: BiLogoNodejs, color: '#388537', title: 'Node JS & Express JS' },
+        { icon: BiLogoJava, color: '#1b84b4', title: 'Java & Spring Boot' },
+        { icon: BiLogoAws, color: '#f79200', title: 'AWS Cloud' },
+    ];
 
     useGSAP(() => {
         timeline.to('#landing', {
@@ -71,16 +82,21 @@ const LandingPage = (): React.JSX.Element => {
                     </p>
                 </div>
 
-
                 <div id='about' className={styles.container}>
                     <h1 className={styles.heading}>About</h1>
                     <p className={styles.description}>
-                        I graduated in 2021 and I have Bachelors degree in Computer Science. With around 3
-                        years of full time experience as a full stack developer and more than 5 years of
-                        freelancing experience, I can assist you with the development of any kind of small
+                        I graduated in 2021 with <b>Bachelors degree in Computer Science</b>. With <b>3
+                            years of full time experience</b> as a full stack developer and more than <b>5 years of
+                                freelancing experience</b>, I can assist you with the development of any kind of small
                         to large scale web applications. I have strong grip over multiple stacks including MERN,
-                        MEAN and Java Spring, and I'm always eager to learn and work with latest technologies
+                        MEAN and Java Spring, and I'm always eager to learn and work with latest and emerging technologies
                     </p>
+
+                    <div className={styles.skillIcons}>
+                        {icons.map((icon: SkillIcon, index: number): React.JSX.Element => (
+                            <span><icon.icon color={icon.color} key={index} /></span>
+                        ))}
+                    </div>
                 </div>
             </div>
         </Fragment>
