@@ -7,7 +7,24 @@
     scroll-behavior: smooth;
 }
 
-body, a{
+body {
+    overflow-x: hidden
+}
+
+body,
+a,
+textarea {
     font-family: "Roboto", sans-serif;
     color: rgba(0, 0, 0, 0.7);
+}
+
+input,
+button,
+textarea {
+    border: 0 none;
+    outline: 0 none;
+}
+
+button {
+    cursor: pointer;
 }
