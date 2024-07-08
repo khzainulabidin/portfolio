@@ -1,7 +1,7 @@
 import { useGSAP } from '@gsap/react';
 import styles from './LandingPage.module.css';
 import gsap from 'gsap';
-import { ChangeEvent, Fragment, useState } from 'react';
+import { ChangeEvent, Fragment, useEffect, useState } from 'react';
 import { IoHomeOutline } from 'react-icons/io5';
 import { IoInformationCircleOutline } from 'react-icons/io5';
 import { TbListDetails } from 'react-icons/tb';
@@ -47,6 +47,7 @@ const LandingPage: React.FunctionComponent = (): React.JSX.Element => {
     const contactTimeline = gsap.timeline();
     const [messageStatus, setMessageStatus] = useState<'success' | 'error' | null>(null);
     const [isDirtyForm, setIsDirtyForm] = useState<boolean>(false);
+    const [scrollPosition, setScrollPosition] = useState(0);
     const [contactFormData, setContactFormData] = useState<IContactFormData>({
         name: '',
         email: '',
@@ -153,6 +154,21 @@ const LandingPage: React.FunctionComponent = (): React.JSX.Element => {
         });
     }, []);
 
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollTop = window.scrollY;
+            const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrollPercentage = (scrollTop / docHeight) * 100;
+            setScrollPosition(scrollPercentage);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
         <Fragment>
             <nav id='navbar' className={styles.navbar}>
@@ -161,6 +177,13 @@ const LandingPage: React.FunctionComponent = (): React.JSX.Element => {
                 <a href='#' title='Projects'><TbListDetails /></a>
                 <a href='#contact' title='Contact'><MdOutlineAlternateEmail /></a>
             </nav>
+
+            <div className={styles.progressContainer}>
+                <div
+                    className={styles.progressBar}
+                    style={{ width: `${scrollPosition}%` }}
+                />
+            </div>
 
             <main className={styles.landing}>
                 <div id='landing' className={styles.container}>
