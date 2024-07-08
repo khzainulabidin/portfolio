@@ -162,8 +162,6 @@ const LandingPage: React.FunctionComponent = (): React.JSX.Element => {
                 <a href='#contact' title='Contact'><MdOutlineAlternateEmail /></a>
             </nav>
 
-            <h1>{import.meta.env.VITE_TEST}</h1>
-
             <main className={styles.landing}>
                 <div id='landing' className={styles.container}>
                     <h1 className={styles.heading}>
