@@ -4,7 +4,6 @@ import gsap from 'gsap';
 import { ChangeEvent, Fragment, useEffect, useState } from 'react';
 import { IoHomeOutline } from 'react-icons/io5';
 import { IoInformationCircleOutline } from 'react-icons/io5';
-import { TbListDetails } from 'react-icons/tb';
 import { MdOutlineAlternateEmail } from 'react-icons/md';
 import { ScrollTrigger } from 'gsap/all';
 import {
@@ -24,6 +23,7 @@ import {
     BiBadgeCheck,
     BiXCircle
 } from 'react-icons/bi';
+import { TbBrandNextjs } from "react-icons/tb";
 import { IconType } from 'react-icons';
 import emailjs from '@emailjs/browser';
 
@@ -58,6 +58,7 @@ const LandingPage: React.FunctionComponent = (): React.JSX.Element => {
         { icon: BiLogoCss3, color: '#006eb5', title: 'CSS' },
         { icon: BiLogoJavascript, color: '#e8d44d', title: 'JavaScript' },
         { icon: BiLogoTypescript, color: '#2f73c0', title: 'TypeScript' },
+        { icon: TbBrandNextjs, color: '#2a2b2d', title: 'Next JS' },
         { icon: BiLogoReact, color: '#05d1f6', title: 'React JS & React Native' },
         { icon: BiLogoAngular, color: '#bd032d', title: 'Angular' },
         { icon: BiLogoNodejs, color: '#388537', title: 'Node JS & Express JS' },
@@ -174,7 +175,6 @@ const LandingPage: React.FunctionComponent = (): React.JSX.Element => {
             <nav id='navbar' className={styles.navbar}>
                 <a href='#landing' title='Home'><IoHomeOutline /></a>
                 <a href='#about' title='About'><IoInformationCircleOutline /></a>
-                <a href='#' title='Projects'><TbListDetails /></a>
                 <a href='#contact' title='Contact'><MdOutlineAlternateEmail /></a>
             </nav>
 
@@ -201,11 +201,11 @@ const LandingPage: React.FunctionComponent = (): React.JSX.Element => {
                         About <span className={styles.gradientText}>me</span>
                     </h1>
                     <p className={styles.description}>
-                        I graduated in 2021 with <b>Bachelors degree in Computer Science</b>. With <b>3
-                            years of full time experience</b> as a full stack developer and more than <b>5 years of
-                                freelancing experience</b>, I can assist you with the development of any kind of small
-                        to large scale web applications. I have strong grip over multiple stacks including MERN,
-                        MEAN and Java Spring, and I'm always eager to learn and work with latest and emerging technologies
+                        I'm an <b>AWS Certified full stack developer</b>, graduated in 2021 with <b>Bachelors degree in Computer Science</b>.
+                        With <b>3 years of full time experience</b> and more than <b>5 years of freelancing experience</b>, I can assist
+                        you with the development of any kind of small to large scale web applications. I have strong grip over multiple
+                        stacks including MERN, MEAN and Java Spring, and I'm always eager to learn and work with latest and emerging
+                        technologies
                     </p>
 
                     <div id='skills' className={styles.skillIcons}>
