@@ -201,11 +201,11 @@ const LandingPage: React.FunctionComponent = (): React.JSX.Element => {
                         About <span className={styles.gradientText}>me</span>
                     </h1>
                     <p className={styles.description}>
-                        I'm an <b>AWS Certified full stack developer</b>, graduated in 2021 with <b>Bachelors degree in Computer Science</b>.
-                        With <b>3 years of full time experience</b> and more than <b>5 years of freelancing experience</b>, I can assist
-                        you with the development of any kind of small to large scale web applications. I have strong grip over multiple
-                        stacks including MERN, MEAN and Java Spring, and I'm always eager to learn and work with latest and emerging
-                        technologies
+                        I graduated in 2021 with <b>Bachelors degree in Computer Science</b>.
+                        With almost <b>3 years of full time experience</b> and more than <b>5 years of freelancing experience</b>,
+                        I can assist you with the development of any kind of small to large scale web applications. I have strong
+                        grip over multiple stacks including MERN, MEAN and Java Spring, and I'm always eager to learn and work with
+                        latest and emerging technologies
                     </p>
 
                     <div id='skills' className={styles.skillIcons}>
